@@ -1,0 +1,189 @@
+<html lang="en" class="">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>CodePen Demo</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+    color="#111">
+  <link rel="canonical" href="https://codepen.io/_niikhil/pen/MWpeqby">
+
+
+
+
+
+
+
+  <script
+    src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js"></script>
+  <script
+    src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+  <script
+    src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+  <style type="text/css" class="INLINE_PEN_STYLESHEET_ID">
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      width: 100vw;
+      min-height: 100vh;
+      background-color: #00E993;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .container .box {
+      position: relative;
+      width: 30rem;
+      height: 30rem;
+      margin: 4rem;
+    }
+
+    .container .box:hover .imgBox {
+      transform: translate(-3.5rem, -3.5rem);
+    }
+
+    .container .box:hover .content {
+      transform: translate(3.5rem, 3.5rem);
+    }
+
+    .imgBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .imgBox img {
+      width: 30rem;
+      height: 30rem;
+      object-fit: cover;
+      resize: both;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      background-color: #6162;
+      z-index: 1;
+      align-items: flex-end;
+      text-align: center;
+      transition: 0.5s ease-in-out;
+    }
+
+    .content h2 {
+      display: block;
+      font-size: 2rem;
+      color: #111;
+      font-weight: 500;
+      line-height: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .content span {
+      color: #555;
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .container .box:hover .content {
+        transform: translate(0, 3.5rem);
+      }
+
+      .container .box:hover .imgBox {
+        transform: translate(0, -3.5rem);
+      }
+    }
+
+    /*# sourceMappingURL=main.css.map */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="imgBox">
+        <img
+          src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&amp;k=20&amp;m=1249496770&amp;s=170667a&amp;w=0&amp;h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI="
+          alt="">
+      </div>
+      <div class="content">
+        <h2>Blue Shoes
+          <br>
+          <span> Want to know where this</span>
+        </h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBox">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/42/Sunrise/SL/XCM_Manual_1323197_1661000_Egypt_SR_EG_CP_NT_SL_WomensMainPage_WomenHeels_3868580_440x440_en_AE.jpg"
+          alt="">
+      </div>
+      <div class="content">
+        <h2>Women Shoes<br>
+          <span>Want to know where this</span>
+        </h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBox">
+        <img
+          src="https://target.scene7.com/is/image/Target/GUEST_dfd690f9-5f80-4dc5-9843-6c65ff47b745?wid=488&amp;hei=488&amp;fmt=pjpeg"
+          alt="">
+      </div>
+      <div class="content">
+        <h2>Baby Shoes<br>
+          <span>Images may be subject</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+  <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-f2588d9f-5dbc-b53c-3343-c39df222dd70"
+    crossorigin=""></script>
+
+
+</body>
+
+</html>
